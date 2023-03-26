@@ -26,7 +26,6 @@ A-Connect is Ayushman Connect , a headless plugin to make the life easier for an
 - [Versioning](#versioning)
 - [Authors](#authors)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Getting Started
 
@@ -246,10 +245,6 @@ For the available versions, see the [tags on this repository][tags]
 - [Gaurav Chandana](https://github.com/gauravracloop)
 - [Puneet Sharma](https://github.com/pksharma14)
 - [Ashish Uniyal](https://github.com/bertoxious)
-
-
-
-
 
 ## License
 
