@@ -148,9 +148,13 @@ sudo apt-get update
 ```
 Now it’s time to install MongoDB
 ```bash
+echo "deb http://security.ubuntu.com/ubuntu focal-security main" | sudo tee /etc/apt/sources.list.d/focal-security.list
+sudo apt-get update
+sudo apt-get install libssl1.1
 sudo apt-get install -y mongodb-org
 sudo systemctl start mongod
 sudo systemctl status mongod
+sudo rm /etc/apt/sources.list.d/focal-security.list
 ```
 Now the status will show as mongo db running indicating successful installation of the mongodb.  
 *Optional*: If you want to connect to this database from any other IP you need to configure this file
