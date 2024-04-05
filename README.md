@@ -171,9 +171,14 @@ wget https://github.com/keycloak/keycloak/releases/download/21.0.1/keycloak-21.0
 unzip keycloak-21.0.1.zip
 # Get inside the Keycloak folder to change the configuration
 cd keycloak-21.0.1/conf/
+# Update the `keycloak.conf` in this directory as per the requirements
 ```
-Update the `keycloak.conf` in this directory as per the requirements
+
 ```bash
+# disable https for keycloak
+./kcadm.sh config credentials --server http://172.21.0.1:8090 --realm master --user admin
+./kcadm.sh update realms/realmname -s sslRequired=NONE
+```
 # Basic settings for running in production. Change accordingly before deploying the server.
 
 # Database
