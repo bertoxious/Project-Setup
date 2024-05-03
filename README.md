@@ -162,6 +162,17 @@ Now the status will show as mongo db running indicating successful installation 
 nano /etc/mongod.conf
 ```
 and change the IP bind from `127.0.0.1` to `0.0.0.0` 
+
+Now create admin user for the database
+```
+db.createUser(
+  {
+    user: "username",
+    pwd: "Password",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+  }
+)
+```
 #### Keycloak Installation
 Get the latest keycloak zip from [Keycloak Downloads page](https://www.keycloak.org/downloads)
 ```bash
