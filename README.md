@@ -16,7 +16,7 @@ A-Connect is Ayushman Connect , a headless plugin to make the life easier for an
 		- [Install Java](#java-installation)
 		- [Install Maven](#maven-installation) 
 		- [Postgres Installation](#postgres-installation)
-		-  [MongoDB Installation](#mongo-installation)
+		-  [MongoDB Installation](#mongodb-installation)
 		- [Keycloak Installation](#keycloak-installation)
 		- [Kafka Installation](#kafka-installation)
 		- [Zookeeper Installation](#zookeeper-installation)
